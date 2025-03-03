@@ -2164,6 +2164,7 @@ GameObject:
   - component: {fileID: 317175961}
   - component: {fileID: 317175960}
   - component: {fileID: 317175962}
+  - component: {fileID: 317175963}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -2192,6 +2193,7 @@ MonoBehaviour:
   - {fileID: 1947372593}
   - {fileID: 1594449684}
   - {fileID: 1481082328}
+  currency: 0
 --- !u!4 &317175961
 Transform:
   m_ObjectHideFlags: 0
@@ -2225,6 +2227,20 @@ MonoBehaviour:
   enemiesPerSecond: 1
   timeBetweenWaves: 5
   diffucultyMultiplier: 0.75
+--- !u!114 &317175963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317175959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4005877dc82aa964cb0be0fb3476864d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingPrefabs:
+  - {fileID: 8007922239581492308, guid: 44197abf4cec12340998270e39e892d9, type: 3}
 --- !u!1001 &324211682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4133,7 +4149,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000e135e02afd927f32
+  m_ApplyToSortingLayers: 00000000e135e02afd927f32e130b99c
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -6361,7 +6377,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &943742320
 Transform:
   m_ObjectHideFlags: 0

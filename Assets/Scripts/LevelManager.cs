@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance { get; private set; }
@@ -19,15 +20,31 @@ public class LevelManager : MonoBehaviour
     public Transform startPoint;
     public Transform[] path;
 
+    public int currency;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        currency = 100;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void IncreaseCurrency(int amount)
     {
-        
+        currency += amount;
+    }
+
+    public bool DecreaseCurrency(int amount)
+    {
+        if (amount <= currency)
+        {
+            currency -= amount;
+            return true;
+        }
+        else
+        {
+            Debug.Log("Not enough currency!");
+            return false;
+        }
+
     }
 }
