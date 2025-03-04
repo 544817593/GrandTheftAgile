@@ -21,16 +21,9 @@ public class LevelManager : MonoBehaviour
     public Transform startPoint;
     public Transform[] path;
 
-    public int currency;
-    public int playerHealth;
+    public int currency = 100;
+    public int playerHealth = 10;
     public int playerScore;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        currency = 100;
-        playerHealth = 10;
-    }
 
     public void IncreaseCurrency(int amount)
     {
