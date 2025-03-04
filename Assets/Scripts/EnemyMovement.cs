@@ -26,10 +26,6 @@ public class EnemyMovement : MonoBehaviour
             {
                 EnemySpawner.onEnemyDestory.Invoke();
                 Destroy(gameObject);
-                if (LevelManager.Instance.playerHealth > 0)
-                {
-                    LevelManager.Instance.DecreasePlayerHealth(1);
-                }
                 return;
             }
             else
