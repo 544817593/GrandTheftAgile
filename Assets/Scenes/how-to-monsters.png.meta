@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a4f52d7a2ade9a94989a4726c1a5ebd7
+guid: fbcaaed6c60f21544bd94e4e6eb5252f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3676917487072583729
-    second: start-page 1_0
+      213: -5337404368202430497
+    second: how-to-monsters_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: start-page 1_0
+      name: how-to-monsters_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 130226d29f8070330800000000000000
-      internalID: 3676917487072583729
+      spriteID: fd70da2810bbde5b0800000000000000
+      internalID: -5337404368202430497
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      start-page 1_0: 3676917487072583729
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
