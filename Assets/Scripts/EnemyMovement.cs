@@ -8,6 +8,7 @@ public class EnemyMovement : MonoBehaviour
     [Header("Attributes")]
     [SerializeField] private float speed = 1f;
     [SerializeField] private int scoreValue = 1;
+    [SerializeField] private string enemyTag;
 
     private Transform target;
     private int pathIndex = 0;
@@ -49,5 +50,10 @@ public class EnemyMovement : MonoBehaviour
     public int GetScore()
     {
          return scoreValue; 
+    }
+
+    public string GetEnemyTag()
+    {
+        return enemyTag;
     }
 }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4695542493304964986}
   - component: {fileID: -926274494787802554}
   m_Layer: 6
-  m_Name: Enemy
+  m_Name: Enemy 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.027233727, g: 0.86742455, b: 0.9622642, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
   rb: {fileID: 7749056572380729597}
   speed: 1
   scoreValue: 1
-  enemyTag: IL
+  enemyTag: DLE
 --- !u!114 &-926274494787802554
 MonoBehaviour:
   m_ObjectHideFlags: 0

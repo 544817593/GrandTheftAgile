@@ -14,9 +14,11 @@ public class Turret : MonoBehaviour
     [SerializeField] private float range = 1.5f;
     [SerializeField] private float rotationSpeed = 200f;
     [SerializeField] private float fireRate = 1f;
+    [SerializeField] private string targetTag;
 
     private Transform target;
     private float timeUntilFire;
+
 
     private void Update()
     {
@@ -58,7 +60,14 @@ public class Turret : MonoBehaviour
         RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, range, (Vector2)transform.position, 0f, enemyMask);
         if (hits.Length > 0)
         {
-            target = hits[0].transform;
+            for (int i = 0; i < hits.Length; i++)
+            {
+                if (hits[i].transform.GetComponent<EnemyMovement>().GetEnemyTag().Equals(targetTag))
+                {
+                    target = hits[i].transform;
+                    return;
+                }
+            }
         }
 
     }

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -81,7 +82,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        GameObject enemyPrefab = enemyPrefabs[0];
+        GameObject enemyPrefab = enemyPrefabs[UnityEngine.Random.Range(0,enemyPrefabs.Length)];
         Instantiate(enemyPrefab, LevelManager.Instance.startPoint.position, Quaternion.identity);
     }
 }
