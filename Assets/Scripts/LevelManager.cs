@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class LevelManager : MonoBehaviour
@@ -56,6 +57,7 @@ public class LevelManager : MonoBehaviour
         playerHealth -= amount;
         if (playerHealth <= 0)
         {
+            SceneManager.LoadSceneAsync(5);
             Debug.Log("Game Over!");
             return true;
         }
