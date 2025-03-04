@@ -265,7 +265,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.245, y: 0.614, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8601709091973858765}
@@ -290,7 +290,7 @@ MonoBehaviour:
     m_Bits: 64
   bulletPrefab: {fileID: 2935627704244832609, guid: 0fb7e90085218aa43be73a6b8cc2d52e, type: 3}
   bulletSpawnPoint: {fileID: 1928595639572864536}
-  range: 2.5
+  range: 2
   rotationSpeed: 200
-  fireRate: 0.5
+  fireRate: 1
   targetTag: IL

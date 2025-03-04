@@ -621,10 +621,10 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 6331144395206776281, guid: 62134de2d9398fe4cbbe96b904685339, type: 3}
   - {fileID: 6331144395206776281, guid: 1422c40751a5c0b4cb66c0b2a45beede, type: 3}
-  baseEnemies: 8
-  enemiesPerSecond: 1
-  timeBetweenWaves: 5
-  diffucultyMultiplier: 0.75
+  baseEnemies: 12
+  enemiesPerSecond: 4
+  timeBetweenWaves: 6
+  diffucultyMultiplier: 2
 --- !u!114 &317175963
 MonoBehaviour:
   m_ObjectHideFlags: 0
