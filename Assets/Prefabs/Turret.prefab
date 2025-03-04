@@ -293,4 +293,4 @@ MonoBehaviour:
   range: 1.75
   rotationSpeed: 150
   fireRate: 1
-  targetTag: IL
+  targetTag: DLE
