@@ -5,7 +5,7 @@ public class BuildManager : MonoBehaviour
     public static BuildManager instance;
 
     [Header("References")]
-    [SerializeField] private GameObject[] buildingPrefabs;
+    [SerializeField] private Tower[] towers;
 
     private int selectedTurret = 0;
 
@@ -19,8 +19,13 @@ public class BuildManager : MonoBehaviour
         instance = this;
     }
 
-    public GameObject GetSelectedTurret()
+    public Tower GetSelectedTurret()
     {
-        return buildingPrefabs[selectedTurret];
+        return towers[selectedTurret];
+    }
+
+    public void SetSelectedTurret(int selectedTurret)
+    {
+        this.selectedTurret = selectedTurret;
     }
 }
