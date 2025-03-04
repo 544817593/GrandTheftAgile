@@ -7,6 +7,7 @@ public class EnemyMovement : MonoBehaviour
 
     [Header("Attributes")]
     [SerializeField] private float speed = 1f;
+    [SerializeField] private int scoreValue = 1;
 
     private Transform target;
     private int pathIndex = 0;
@@ -43,5 +44,10 @@ public class EnemyMovement : MonoBehaviour
     {
         Vector2 direction = (target.position - transform.position).normalized;
         rb.linearVelocity = direction * speed;
+    }
+
+    public int GetScore()
+    {
+         return scoreValue; 
     }
 }

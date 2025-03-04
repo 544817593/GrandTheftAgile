@@ -22,6 +22,7 @@ public class LevelManager : MonoBehaviour
 
     public int currency;
     public int playerHealth;
+    public int playerScore;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

@@ -14,6 +14,7 @@ public class Health : MonoBehaviour
         {
             EnemySpawner.onEnemyDestory.Invoke();
             isDestroyed = true;
+            LevelManager.Instance.playerScore += gameObject.GetComponent<EnemyMovement>().GetScore();
             Destroy(gameObject);
         }
     }
